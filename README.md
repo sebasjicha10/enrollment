@@ -1,4 +1,4 @@
-Enrollment page </br></br>
+<h1>Enrollment page</h1> <hr>
 This project consists of a simple enrollment page for courses given by my local university (UCR).</br>
 It is built using Python (Flask), HTML, CSS, Bootstrap and JavaScript.</br>
 To get in, the user can log in, if previously registered, or sign up.</br>
