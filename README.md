@@ -1,6 +1,6 @@
 <h1>Enrollment page</h1>
 <h2>Description</h2>
-This project consists of a simple enrollment page for courses given by my local university (UCR). <a href="https://youtu.be/N4fIXs1261c">Watch a video demo here</a>
+This project consists of a simple enrollment page for courses given by my local university (UCR). <a href="https://youtu.be/N4fIXs1261c" target=”_blank”>Watch a video demo here</a>
 <h2>Back End</h2>
 <ul>
   <li>Python - Flask</li>
