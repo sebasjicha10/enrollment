@@ -1,0 +1,38 @@
+#schedule_table {
+    table-layout: fixed;
+    width: 100%;
+    height: auto;
+    min-width: 560px;
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+
+#schedule_table td {
+    overflow: hidden;
+    padding: 5px 5px;
+    border-radius: 25px;
+    background-color: #EDF8F8;
+    font-family: 'Varela Round', sans-serif;
+    color: red;
+}
+
+#schedule_table th {
+    border-radius: 25px;
+    background-color: #D0F1D8;
+    padding: 5px 5px;
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#schedule_table tr {
+    display: table-row;
+}
+
+.hour {
+    border-radius: 25px;
+    background-color: #D0F1D8 !important;
+    font-weight: bold;
+    color: black !important;
+}
+

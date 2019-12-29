@@ -1,0 +1,72 @@
+/* Format logo */
+
+#ucr_logo {
+    height: 53px;
+    width: 111px;
+}
+
+/* Header*/
+
+header {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 50px;
+    max-height: 55px;
+}
+
+nav {
+    background-color: #EDF8F8;
+    box-sizing: border-box;
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: fixed;
+    min-height: 50px;
+    max-height: 55px;
+    padding: 7px 0px 7px 0px;
+    z-index: 100;
+}
+
+/*  Nav Bar */
+
+/* Styling of the navegation buttons */
+a.navegation {
+    text-decoration: none;
+    color: #41ADE7;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    padding: 14px 30px 0px 0px;
+    display: inline-block;
+    margin: 0px 0px 0px 20px;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#logout_b {
+    color: #5ECA80;
+}
+
+li.navegation {
+    display: inline;
+    position: relative;
+}
+
+.navbar {
+    position: relative;
+    left: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+a.navegation:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.logo:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}

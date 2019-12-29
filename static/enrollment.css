@@ -1,0 +1,39 @@
+.envelop {
+    background-image: linear-gradient(#B2D4E6, #ABDEBB);
+    border-radius: 212px;
+}
+
+#select_course {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    color: #000000;
+}
+
+#logo_blanco {
+    margin: 20px 40px 0px 40px;
+}
+
+#alert_1 {
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+    padding: 30px 20px 0px 20px;
+}
+
+.black_submit {
+    border: 1px solid red;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 25px;
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.black_submit:hover {
+    color: red;
+    background-color: rgba(0, 0, 0, 0.95);
+}

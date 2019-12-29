@@ -1,0 +1,111 @@
+h2 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    color: #41ADE7;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-family: 'Abel', sans-serif;
+    font-size: 35px;
+    color: #5ECA80;
+    margin-bottom: 10px;
+    float: left;
+}
+
+h4 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    float: left;
+}
+
+#add_icon {
+    float: left;
+    position: relative;
+    left: 5px;
+    bottom: 3px;
+}
+
+
+h4:hover + #add_icon {
+    width: 25px;
+    height: auto;
+    opacity: 0.6;
+}
+
+#add_icon:hover {
+    width: 25px;
+    height: auto;
+    opacity: 0.6;
+}
+
+h4:hover {
+    color: #5ECA80;
+}
+
+/* Link to register from login page */
+#login_register {
+    color: #000000;
+    margin-top: 50px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* Request for password before updating info */
+#info_update {
+    color: #000000;
+    margin-top: 40px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* Personal ingo page styling */
+
+h6 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    color: #00000;
+    float: left;
+    font-weight: bold;
+}
+
+.info_title {
+    font-weight: bold;
+}
+
+.edit_links {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Green submit button */
+.green_submit {
+    border: none;
+    background-color: #5ECA80;
+    color: #FFFFFF;
+    border-radius: 25px;
+    width: 100px;
+    height: 35px;
+    margin-top: 5px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.green_submit:hover {
+    color: #FFFFFF;
+    background-color: #41ADE7;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+#password_change {
+    width: 155px;
+    margin-left: 50px;
+}

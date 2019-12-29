@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ student_name }}
+{% endblock %}
+
+{% block main %}
+    <h3>{{ student_name }}</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Course ID</th>
+                <th>Name</th>
+                <th>Schedule</th>
+                <th>Enrolled</th>
+            </tr>
+        </thead>
+        <tbody>
+                {% for course in history %}
+                <tr>
+                    <td>{{ course.course_id }}</td>
+                    <td>{{ course.name }}</td>
+                    <td>{{ course.schedule }}</td>
+                    <td>{{ course.datetime }}</td>
+                </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+    <a id="add_link" href="/enrollment"><h4>Add Course</h4><img id="add_icon" src="/static/images/add.svg" alt="Add icon"></di></a>
+{% endblock %}

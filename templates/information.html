@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Personal Info
+{% endblock %}
+
+{% block main %}
+    <h6>{{ student_name }}</h6>
+    <table class="table">
+        <tbody>
+                {% for value in info %}
+                <tr>
+                    <td class="info_title">STUDENT ID</td>
+                    <td>{{ value.user_id }}</td>
+                </tr>
+                <tr>
+                    <td class="info_title">MAYOR</td>
+                    <td>{{ value.major }}</td>
+                </tr>
+                <tr>
+                    <td class="info_title">PHONE ID</td>
+                    <td>{{ value.phone }}</td>
+                </tr>
+                <tr>
+                    <td class="info_title">EMAIL</td>
+                    <td>{{ value.email }}</td>
+                </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+    <div class="edit_links">
+        <a href="/update" class="green_submit" type="submit">Update</a>
+        <a href="/password" id="password_change" class="green_submit" type="submit">Change Password</a>
+    </div>
+{% endblock %}

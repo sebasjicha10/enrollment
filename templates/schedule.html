@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Schedule
+{% endblock %}
+
+{% block main %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h3>Weekly Schedule</h3>
+<table id="schedule_table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>
+        <span class="long">Monday</span>
+      </th>
+      <th>
+        <span class="long">Tuesday</span>
+      </th>
+      <th>
+        <span class="long">Wednesday</span>
+      </th>
+      <th>
+        <span class="long">Thursday</span>
+      </th>
+      <th>
+        <span class="long">Friday</span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="hour"><span>7:00 - 7:50</span></td>
+      <td>{% for course in courses %} {% if course.course_id == "DN0547" %} {{ course.course_id }} {% endif %} {% endfor %}</td>
+      <td>{% for course in courses %} {% if course.course_id == "DN0423" %} {{ course.course_id }} {% endif %} {% endfor %}</td>
+      <td></td>
+      <td>{% for course in courses %} {% if course.course_id == "DN0496" %} {{ course.course_id }} {% endif %} {% endfor %}</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour"><span>8:00 - 8:50</span></td>
+      <td>{% for course in courses %} {% if course.course_id == "DN0547" %} {{ course.course_id }} {% endif %} {% endfor %}</td>
+      <td>{% for course in courses %} {% if course.course_id == "DN0423" %} {{ course.course_id }} {% endif %} {% endfor %}</td>
+      <td></td>
+      <td>{% for course in courses %} {% if course.course_id == "DN0496" %} {{ course.course_id }} {% endif %} {% endfor %}</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour"><span>9:00 - 9:50</span></td>
+      <td>{% for course in courses %} {% if course.course_id == "DN0547" %} {{ course.course_id }} {% endif %} {% endfor %}</td>
+      <td>{% for course in courses %} {% if course.course_id == "DN0423" %} {{ course.course_id }} {% endif %} {% endfor %}</td>
+      <td></td>
+      <td>{% for course in courses %} {% if course.course_id == "DN0496" %} {{ course.course_id }} {% endif %} {% endfor %}</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour"><span>10:00 - 10:50</span></td>
+      <td></td>
+      <td></td>
+      <td>{% for course in courses %} {% if course.course_id == "DN0525" %} {{ course.course_id }} {% endif %} {% endfor %}</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour"><span>11:00 - 11:50</span></td>
+      <td></td>
+      <td></td>
+      <td>{% for course in courses %} {% if course.course_id == "DN0525" %} {{ course.course_id }} {% endif %} {% endfor %}</td>
+      <td></td>
+      <td></td>
+    </tr>    <tr>
+      <td class="hour"><span>12:00 - 12:50</span></td>
+      <td></td>
+      <td></td>
+      <td>{% for course in courses %} {% if course.course_id == "DN0525" %} {{ course.course_id }} {% endif %} {% endfor %}</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour"><span>1:00 - 1:50</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>{% for course in courses %} {% if course.course_id == "DN0405" %} {{ course.course_id }} {% endif %} {% endfor %}</td>
+    </tr>
+    <tr>
+      <td class="hour"><span>2:00 - 2:50</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>{% for course in courses %} {% if course.course_id == "DN0405" %} {{ course.course_id }} {% endif %} {% endfor %}</td>
+    </tr>
+    <tr>
+      <td class="hour"><span>3:00 - 3:50</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>{% for course in courses %} {% if course.course_id == "DN0405" %} {{ course.course_id }} {% endif %} {% endfor %}</td>
+    </tr>
+    <tr>
+      <td class="hour"><span>4:00 - 4:50</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour"><span>5:00 - 5:50</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour"><span>6:00 - 6:50</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Courses
+{% endblock %}
+
+{% block main %}
+    <form class="envelop" action="/enrollment" method="post">
+        <img id="logo_blanco" src="/static/images/ucrblanca.svg" alt="UCR Logo">
+        <p id="select_course">Select a Course</p>
+        <div class="form-group">
+            <select class="form-control" name="course">
+                <option disabled selected value="">Course</option>
+                    {% for course in courses %}
+                    <option value="{{ course.course_id }}">{{ course.course_id }} {{ course.name }} / {{ course.schedule }} / Spaces: {{ course.space_available }}</option>
+                    {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <input required class="form-control" name="password" placeholder="Password" type="password"  pattern=".{6,}">
+        </div>
+        <p id="alert_1">Before submitting, consider that is operation can't be undone.</p>
+        <button class="black_submit" type="submit">Enroll</button>
+    </form>
+{% endblock %}

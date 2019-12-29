@@ -1,0 +1,57 @@
+{% extends "layout_forms.html" %}
+
+{% block title %}
+    Sign Up
+{% endblock %}
+
+{% block heading %}
+    Sign Up
+{% endblock %}
+
+{% block main %}
+    <form action="/register" method="post">
+        <div class="form-group">
+            <input required autocomplete="off" id="user_input" autofocus class="form-control"  placeholder="Student ID" name="student_id" type="text" onkeyup="check_username();">
+            <p id="availability"></p>
+        </div>
+        <div class="form-group">
+            <input required autocomplete="off" id="student_name" class="form-control"  placeholder="Name" name="name" type="text" disabled="disabled">
+        </div>
+        <div class="form-group">
+            <input required autocomplete="off" class="form-control"  placeholder="Phone" name="phone" type="tel" pattern="[0-9]{8}">
+        </div>
+        <div class="form-group">
+            <input required autocomplete="off" class="form-control"  placeholder="Email" name="email" type="text" max="255">
+        </div>
+        <div class="form-group">
+            <input required class="form-control" name="password" placeholder="Password" type="password" pattern=".{6,}">
+        </div>
+        <div class="form-group">
+            <input required class="form-control" name="conf_password" placeholder="Confirm Password" type="password" pattern=".{6,}">
+        </div>
+        <button class="blue_submit" type="submit">Sign Up</button>
+    </form>
+
+<script>
+    function check_username() {
+        var username = document.getElementById("user_input").value;
+        var label = document.getElementById("availability");
+        $.get("/check_id?student_id=" + username, function (data) {
+
+            if (data != false) {
+                label.style.display = 'none';
+                var nice = document.getElementById("student_name");
+                nice.placeholder = data;
+            } else {
+                label.style.display = 'block';
+                label.innerHTML = "Invalid or already registered ID";
+                var failure = document.getElementById("availability");
+                failure.style.color = 'red';
+                var bad = document.getElementById("student_name");
+                bad.placeholder = "Name";
+                event.preventDefault();
+            }
+        });
+    }
+</script>
+{% endblock %}
